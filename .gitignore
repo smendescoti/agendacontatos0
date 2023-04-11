@@ -1,0 +1,25 @@
+# Arquivos Java compilados
+*.class
+
+# Arquivos de dependência
+/lib/
+
+# Arquivos de build do Maven
+target/
+
+# Arquivos de build do Gradle
+build/
+
+# Arquivos de configuração do Eclipse
+.classpath
+.project
+.settings/
+
+# Arquivos de log do Tomcat
+logs/
+
+# Arquivos de configuração do IntelliJ IDEA
+.idea/
+
+# Arquivos de backup do Notepad++
+*.bak
