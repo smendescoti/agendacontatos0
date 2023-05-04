@@ -18,7 +18,17 @@
       		Para recuperar sua senha de usuário, preencha os campos:
       	</p>
       	<hr/>
-        <form>
+      	
+     	<div class="text-success text-center">
+      		<h5>${mensagem_sucesso}</h5>
+      	</div>
+      	
+      	<div class="text-danger text-center">
+      		<h5>${mensagem_erro}</h5>
+      	</div>
+      	
+        <form method="post" action="recuperar-senha">
+        
           <div class="mb-3">
             <label for="email" class="form-label">Entre com o seu email:</label>
             <input type="email" class="form-control" id="email" name="email" required>
@@ -26,7 +36,9 @@
           <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary">Realizar Recuperação da Senha</button>
           </div>
+          
         </form>
+        
         <div class="text-center mt-3">
           <a href="/agendacontatos/">Voltar para página inicial</a>
         </div>

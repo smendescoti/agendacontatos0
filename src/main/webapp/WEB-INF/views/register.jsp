@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 <body class="bg-secondary">
-  <div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="container col-md-4 col-offset-4 mt-5">
     <div class="card">
       <div class="card-header">
         <h3 class="text-center">Agenda de Contatos</h3>
@@ -30,19 +30,49 @@
         <form method="post" action="cadastrar-usuario">
         
         <div class="mb-3">
-            <label for="nome" class="form-label">Entre com o seu nome:</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
+            <label for="nome" class="form-label">
+            	Entre com o seu nome:
+            </label>
+            <input 
+            	type="text" 
+            	class="form-control" 
+            	id="nome" 
+            	name="nome" 
+            	pattern="[A-Za-zÀ-Üà-ü\s]{8,150}"
+            	title="Por favor, informe um nome válido de 8 a 150 caracteres."
+            	required 
+            	/>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Entre com o seu email:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+            <label for="email" class="form-label">
+            	Entre com o seu email:
+            </label>
+            <input 
+            	type="email" 
+            	class="form-control" 
+            	id="email" 
+            	name="email" 
+            	required 
+            	/>
           </div>
           <div class="mb-3">
-            <label for="password" class="form-label">Entre com a sua senha:</label>
-            <input type="password" class="form-control" id="senha" name="senha" required>
+            <label for="password" class="form-label">
+            	Entre com a sua senha:
+            </label>
+            <input 
+            	type="password" 
+            	class="form-control" 
+            	id="senha" 
+            	name="senha" 
+            	pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}"
+            	title="A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial. Além disso, deve ter de 8 a 16 caracteres."
+            	required 
+            	/>
           </div>
           <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary">Realizar Cadastro</button>
+            <button type="submit" class="btn btn-primary">
+            	Realizar Cadastro
+            </button>
           </div>
           
         </form>
